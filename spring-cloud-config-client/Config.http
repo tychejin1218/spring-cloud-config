@@ -1,0 +1,6 @@
+### 정적인 Config 조회
+GET http://localhost:9092/static/config
+
+
+### 동적인 Config 조회
+GET http://localhost:9092/dynamic/config

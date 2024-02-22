@@ -1,0 +1,25 @@
+# server ??
+server:
+  port: 9091
+
+# config ??
+spring:
+  application:
+    name: spring-cloud-config-properties # config ??? ???? ?????? ??
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tychejin1218/spring-cloud-config-properties
+#          uri: https://tychejin1218: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@github.com/tychejin1218/spring-cloud-config-properties.git
+          default-label: main
+
+# actuator ??
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true

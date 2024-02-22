@@ -1,0 +1,19 @@
+# Server ??
+server:
+  port: 9092
+
+# Config ??
+spring:
+  application:
+    name: datasource # ?????? ??
+  profiles:
+    active: dev # ?????? ??
+  config:
+    import: "optional:configserver:http://localhost:9091/" # Spring Cloud Config server ??
+
+# Actuator ??
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
