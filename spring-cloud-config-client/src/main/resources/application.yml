@@ -1,17 +1,17 @@
-# Server ??
+# Server 설정
 server:
   port: 9092
 
-# Config ??
+# Config 설정
 spring:
   application:
-    name: datasource # ?????? ??
+    name: datasource
   profiles:
-    active: dev # ?????? ??
+    active: dev
   config:
-    import: "optional:configserver:http://localhost:9091/" # Spring Cloud Config server ??
+    import: "optional:configserver:http://localhost:9091/" # Spring Cloud Config server 설정
 
-# Actuator ??
+# Actuator 설정
 management:
   endpoints:
     web:
