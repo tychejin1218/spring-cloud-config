@@ -1,7 +1,0 @@
-# Database 설정
-datasource:
-  driver-class-name: org.h2.Driver
-  writer-jdbc-url: jdbc:h2:~/local
-  username: api2_username
-  password: api2_password
-

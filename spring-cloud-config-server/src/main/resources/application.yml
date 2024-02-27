@@ -1,6 +1,6 @@
 # server 설정
 server:
-  port: 9091
+  port: 9092
 
 # config 설정
 spring:
@@ -11,7 +11,6 @@ spring:
       server:
         git:
           uri: https://github.com/tychejin1218/spring-cloud-config-properties
-#          uri: https://tychejin1218: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@github.com/tychejin1218/spring-cloud-config-properties.git
           search-paths: /api1/**, /api2/**
           default-label: main
 
