@@ -1,17 +1,14 @@
 # server 설정
 server:
-  port: 9092
+  port: 9091
 
 # config 설정
 spring:
-  application:
-    name: spring-cloud-config-properties
   cloud:
     config:
       server:
         git:
           uri: https://github.com/tychejin1218/spring-cloud-config-properties
-          search-paths: /api1/**, /api2/**
           default-label: main
 
 # actuator 설정

@@ -8,16 +8,16 @@ import org.springframework.stereotype.Service;
 @Service
 public class ConfigStaticService {
 
-  @Value("${datasource.driver-class-name}")
+  @Value("${spring.datasource.driver-class-name}")
   private String driverClassName;
 
-  @Value("${datasource.url}")
+  @Value("${spring.datasource.url}")
   private String url;
 
-  @Value("${datasource.username}")
+  @Value("${spring.datasource.username}")
   private String username;
 
-  @Value("${datasource.password}")
+  @Value("${spring.datasource.password}")
   private String password;
 
   public Map<String, String> getConfig() {

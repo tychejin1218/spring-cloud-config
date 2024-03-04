@@ -5,9 +5,9 @@ server:
 # Config 설정
 spring:
   application:
-    name: api1
+    name: config
   profiles:
-    active: datasource-local, environment-local
+    active: local
   config:
     import: "optional:configserver:http://localhost:9091/" # Spring Cloud Config server 설정
 
