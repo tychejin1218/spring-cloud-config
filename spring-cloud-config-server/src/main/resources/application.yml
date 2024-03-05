@@ -8,8 +8,10 @@ spring:
     config:
       server:
         git:
+          # GitHub 저장소의 주소
           uri: https://github.com/tychejin1218/spring-cloud-config-properties
-          default-label: main
+          # GitHub 저장소의 브랜치
+          default-label: main 
 
 # actuator 설정
 management:

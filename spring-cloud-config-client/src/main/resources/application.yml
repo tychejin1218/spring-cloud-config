@@ -5,11 +5,14 @@ server:
 # Config 설정
 spring:
   application:
+    # Config Server에서 참조하는 설정 파일의 애플리케이션 이름을 설정
     name: config
   profiles:
+    # 활성화할 프로파일을 설정(local, dev, qa, prod)
     active: local
   config:
-    import: "optional:configserver:http://localhost:9091/" # Spring Cloud Config server 설정
+    # 외부 설정 파일 설정 - Config Server 정보를 설정
+    import: "optional:configserver:http://localhost:9091/"
 
 # Actuator 설정
 management:
